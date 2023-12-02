@@ -1,3 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
+.card {
+  width: 90%;
+  max-width: 345px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (min-width: 1000px) {
+  .card {
+    flex-direction: row;
+    max-width: none;
+    width: 610px;
+    max-height: 441px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .img-container {
+    min-width: 50%;
+  }
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1000px) {
+  .img-container .mobile-img {
+    display: none;
+  }
+}
+.img-container .desktop-img {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .img-container .desktop-img {
+    display: block;
+  }
+}
+
+.text-container {
+  padding: 12px 25px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .text-container {
+    padding: 20px 35px;
+  }
+}
+.text-container > * {
+  padding: 5px 0;
+}
+@media (min-width: 1000px) {
+  .text-container > * {
+    padding: 10px 0;
+  }
+}
+.text-container h4 {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+.text-container h2 {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: Fraunces, Arial;
+  line-height: 1;
+}
+.text-container p {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  color: hsl(228, 12%, 48%);
+  padding: 8px 0;
+  line-height: 1.7;
+}
+@media (min-width: 1000px) {
+  .text-container p {
+    padding: 12px 0;
+  }
+}
+.text-container button {
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-container button:hover {
+  cursor: pointer;
+}
+.text-container button:active {
+  background-color: hsl(212, 21%, 14%);
+}
+.text-container button span {
+  padding-left: 10px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  padding: 14px 0 10px;
+}
+.prices .actual-price {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: Fraunces, Arial;
+  color: hsl(158, 36%, 37%);
+  padding-right: 20px;
+}
+.prices .previous-price {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  padding: 25px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
 /*# sourceMappingURL=styles.css.map */
